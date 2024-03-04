@@ -1,5 +1,5 @@
 # Importando biblioteca random
-import random
+from random import choice
 
 # Criando lista
 nomes = []
@@ -12,7 +12,7 @@ while True:
     nomes.append(nome) # Adicionando nomes a lista
 
 
-sorteado = random.choice(nomes) # Sorteando um nome atraves da função random
+sorteado = choice(nomes) # Sorteando um nome atraves da função random
 nomes.remove(sorteado) # Removendo o sorteado da lista
 print(f'O sorteado é: {sorteado}') # Printando apenas o sorteado
 print(f'Lista de participantes não sorteados: {nomes}') # Printando a lista dos não sorteados
