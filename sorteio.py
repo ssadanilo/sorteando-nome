@@ -3,10 +3,12 @@ from random import choice
 
 # Criando lista
 nomes = []
+contador = 1
 
 # Criando Loop while para inserir quantos nomes desejar
 while True:
-    nome = input('Digite um nome (ou "sair" para encerrar): ')
+    nome = input(f'Digite o {contador}º nome (ou "sair" para encerrar): ')
+    contador += 1
     if nome.lower() == 'sair': # Uso do lower aqui para minimizar apenas a palavra sair
         break # Parando o loop
     nomes.append(nome) # Adicionando nomes a lista
